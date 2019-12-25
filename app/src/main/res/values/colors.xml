@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FE0460</color>
+    <color name="colorSliderBackground">#181821</color>
+    <color name="colorTextColor">#FFFFFF</color>
+    <color name="colorSwitchColor">#2371FA</color>
+    <color name="splashBackground">#a9ffcf</color>
+    <color name="blue">#258CEC</color>
+
+</resources>

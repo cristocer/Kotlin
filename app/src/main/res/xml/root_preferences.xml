@@ -1,0 +1,83 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<androidx.preference.PreferenceScreen
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+            app:title="Account">
+
+        <EditTextPreference
+                app:key="signature"
+                app:title="Username"
+                app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            app:key="signature1"
+            app:title="Password"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+                app:key="signature2"
+                app:title="Choose Avatar"
+                app:useSimpleSummaryProvider="true"/>
+
+
+
+    </PreferenceCategory>
+    <PreferenceCategory
+            app:title="Game settings">
+
+        <EditTextPreference
+                app:key="signature3"
+                app:title="Choose language"
+                app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+                app:key="signature4"
+                app:title="Choose font model of lyrics"
+                app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+                app:key="signature5"
+                app:title="Choose layout color"
+                app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+                app:key="sync"
+                app:title="Download additional content as soon as it's released."/>
+
+        <SwitchPreferenceCompat
+                app:key="attachment"
+                app:title="Download only over WiFi"
+                app:summaryOn="The will be no downloads while the WiFi is off"
+                app:summaryOff="There will be downloads by the network whne available"
+                app:dependency="sync"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Additional Information">
+        <Preference
+                app:selectable="false"
+                app:summary="This project is released only for CW1 of CS306 and is not fully implemented yet"/>
+
+        <Preference
+            app:title="Privacy Policy"/>
+        <Preference
+            app:title="Terms and Conditions"/>
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

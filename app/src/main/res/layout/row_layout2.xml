@@ -1,0 +1,4 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="70dp" android:padding="6dip"  android:clickable="true" android:focusable="true">
+<androidx.appcompat.widget.AppCompatTextView android:id="@+id/firstLine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true"  android:textSize="22sp"/>
+</RelativeLayout>
